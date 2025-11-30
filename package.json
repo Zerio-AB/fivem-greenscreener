@@ -1,22 +1,31 @@
 {
-  "name": "fivem-greenscreener",
-  "version": "1.0.0",
-  "description": "",
-  "main": "client.js",
-  "scripts": {
-    "preinstall": "ml-regression-exponential",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@citizenfx/client": "^2.0.6878-1",
-    "@citizenfx/server": "^2.0.6878-1",
-    "canvas": "^2.11.2",
-    "image-js": "^0.35.5"
-  },
-  "resolutions": {
-    "ml-regression-exponential": "2.1.0"
-  }
+	"name": "fivem-greenscreener",
+	"version": "1.0.0",
+	"description": "",
+	"main": "client.js",
+	"scripts": {
+		"preinstall": "ml-regression-exponential",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js",
+		"lint": "eslint *.js",
+		"lint:fix": "eslint *.js --fix",
+		"format": "prettier --write *.js *.json *.md",
+		"format:check": "prettier --check *.js *.json *.md"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@citizenfx/client": "^2.0.6878-1",
+		"@citizenfx/server": "^2.0.6878-1",
+		"canvas": "^2.11.2",
+		"image-js": "^0.35.5"
+	},
+	"devDependencies": {
+		"eslint": "^8.57.0",
+		"prettier": "^3.1.0"
+	},
+	"resolutions": {
+		"ml-regression-exponential": "2.1.0"
+	},
+	"packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
